@@ -8,51 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 26% 14%;
-    --foreground: 40 40% 95%;
+    --background: 218 33% 12%;
+    --foreground: 42 95% 96%;
 
-    --card: 220 26% 14%;
-    --card-foreground: 40 40% 95%;
+    --card: 220 28% 16%;
+    --card-foreground: 42 95% 96%;
 
-    --popover: 220 30% 10%;
-    --popover-foreground: 40 40% 95%;
+    --popover: 220 32% 10%;
+    --popover-foreground: 42 95% 96%;
 
-    --primary: 220 26% 14%;
-    --primary-foreground: 40 40% 95%;
+    --primary: 220 28% 16%;
+    --primary-foreground: 42 95% 96%;
 
-    --secondary: 42 78% 65%;
-    --secondary-foreground: 220 26% 14%;
+    --secondary: 43 88% 62%;
+    --secondary-foreground: 220 28% 12%;
 
-    --muted: 220 20% 25%;
-    --muted-foreground: 40 20% 70%;
+    --muted: 220 22% 28%;
+    --muted-foreground: 42 30% 75%;
 
-    --accent: 42 78% 65%;
-    --accent-foreground: 220 26% 14%;
+    --accent: 38 92% 68%;
+    --accent-foreground: 220 28% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 40% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 42 95% 96%;
 
-    --border: 220 20% 25%;
-    --input: 220 20% 25%;
-    --ring: 42 78% 65%;
+    --border: 220 25% 30%;
+    --input: 220 25% 28%;
+    --ring: 43 88% 62%;
 
     --radius: 1rem;
 
-    /* Luxury gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(220 26% 14%) 0%, hsl(220 30% 10%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(42 78% 65%) 0%, hsl(38 85% 75%) 100%);
-    --gradient-overlay: linear-gradient(180deg, hsla(220 26% 14% / 0.8) 0%, hsla(220 30% 10% / 0.95) 100%);
+    /* Enhanced luxury gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(218 33% 12%) 0%, hsl(220 32% 10%) 50%, hsl(225 30% 14%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 88% 62%) 0%, hsl(38 92% 68%) 50%, hsl(48 85% 72%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsla(218 33% 12% / 0.75) 0%, hsla(220 32% 10% / 0.92) 100%);
+    --gradient-shimmer: linear-gradient(90deg, transparent 0%, hsla(43 88% 62% / 0.3) 50%, transparent 100%);
     
-    /* Luxury shadows */
-    --shadow-luxury: 0 20px 60px -15px hsla(42 78% 65% / 0.3);
-    --shadow-glow: 0 0 40px hsla(42 78% 65% / 0.2);
+    /* Enhanced luxury shadows */
+    --shadow-luxury: 0 25px 70px -20px hsla(43 88% 62% / 0.35);
+    --shadow-glow: 0 0 50px hsla(43 88% 62% / 0.25);
+    --shadow-deep: 0 30px 90px -25px hsla(220 32% 10% / 0.5);
     
     /* Glass morphism */
-    --glass-bg: hsla(220 26% 14% / 0.7);
-    --glass-border: hsla(42 78% 65% / 0.2);
+    --glass-bg: hsla(220 28% 16% / 0.75);
+    --glass-border: hsla(43 88% 62% / 0.25);
     
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 

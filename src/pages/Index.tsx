@@ -26,6 +26,7 @@ const Index = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [background, setBackground] = useState(BACKGROUNDS.default);
+  const [language, setLanguage] = useState("en");
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
 
@@ -58,7 +59,7 @@ const Index = () => {
 
     try {
       const { data, error } = await supabase.functions.invoke("luxora-chat", {
-        body: { messages: [...messages, newUserMessage] },
+        body: { messages: [...messages, newUserMessage], language },
       });
 
       if (error) throw error;
@@ -110,14 +111,32 @@ const Index = () => {
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Header */}
         <header className="backdrop-blur-md bg-[var(--glass-bg)] border-b border-[var(--glass-border)] py-6 px-6 shadow-luxury">
-          <div className="max-w-5xl mx-auto flex items-center gap-3">
-            <Sparkles className="w-8 h-8 text-secondary animate-float" />
-            <div>
-              <h1 className="text-3xl font-serif font-bold bg-gradient-gold bg-clip-text text-transparent">
-                Luxora AI
-              </h1>
-              <p className="text-sm text-muted-foreground font-sans">Your Luxury Travel Concierge</p>
+          <div className="max-w-5xl mx-auto flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Sparkles className="w-8 h-8 text-secondary animate-float" />
+              <div>
+                <h1 className="text-3xl font-serif font-bold bg-gradient-gold bg-clip-text text-transparent">
+                  Luxora AI
+                </h1>
+                <p className="text-sm text-muted-foreground font-sans">Your Luxury Travel Concierge</p>
+              </div>
             </div>
+            <select
+              value={language}
+              onChange={(e) => setLanguage(e.target.value)}
+              className="bg-card/70 border border-border/30 rounded-lg px-4 py-2 text-foreground backdrop-blur-md focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+            >
+              <option value="en">🇬🇧 English</option>
+              <option value="es">🇪🇸 Español</option>
+              <option value="fr">🇫🇷 Français</option>
+              <option value="de">🇩🇪 Deutsch</option>
+              <option value="it">🇮🇹 Italiano</option>
+              <option value="pt">🇵🇹 Português</option>
+              <option value="zh">🇨🇳 中文</option>
+              <option value="ja">🇯🇵 日本語</option>
+              <option value="ar">🇸🇦 العربية</option>
+              <option value="hi">🇮🇳 हिंदी</option>
+            </select>
           </div>
         </header>
 

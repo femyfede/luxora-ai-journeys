@@ -11,13 +11,29 @@ export const ChatMessage = ({ role, content }: ChatMessageProps) => {
   const isLong = content.length > 300;
 
   const formatContent = (text: string) => {
-    // Parse numbered lists and format them nicely
     const lines = text.split('\n');
-    return lines.map((line, idx) => {
-      // Check if line starts with a number
+    const elements: JSX.Element[] = [];
+    
+    lines.forEach((line, idx) => {
+      // Check for image markdown: ![alt](url)
+      const imageMatch = line.match(/!\[(.*?)\]\((.*?)\)/);
+      if (imageMatch) {
+        elements.push(
+          <img
+            key={`img-${idx}`}
+            src={imageMatch[2]}
+            alt={imageMatch[1] || 'Luxury destination'}
+            className="rounded-xl my-3 w-full h-56 object-cover shadow-luxury"
+            loading="lazy"
+          />
+        );
+        return;
+      }
+      
+      // Check if line starts with a numbered list
       const numberMatch = line.match(/^(\d+)\.\s*\*\*(.+?)\*\*\s*-\s*(.+)$/);
       if (numberMatch) {
-        return (
+        elements.push(
           <div key={idx} className="mb-4 last:mb-0">
             <div className="flex items-start gap-2">
               <span className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary/20 text-secondary flex items-center justify-center text-sm font-semibold">
@@ -30,14 +46,16 @@ export const ChatMessage = ({ role, content }: ChatMessageProps) => {
             </div>
           </div>
         );
+        return;
       }
       
       // Regular line
       if (line.trim()) {
-        return <p key={idx} className="mb-2 last:mb-0 leading-relaxed">{line}</p>;
+        elements.push(<p key={idx} className="mb-2 last:mb-0 leading-relaxed">{line}</p>);
       }
-      return null;
     });
+    
+    return elements;
   };
 
   const displayContent = isLong && !isExpanded ? content.slice(0, 300) + "..." : content;
