@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/30862376-190e-4faf-814b-9ddde012ce83
+# 🌍 Luxora AI — Your Smart Luxury Travel Companion
 
-## How can I edit this code?
+**Bilingual AI Assistant ** for discovering luxury hotels, restaurants, and exclusive destinations — available on **Web**, **WhatsApp**, and soon as a **Mobile App**
 
-There are several ways of editing your application.
+## 💡 About Luxora AI
 
-**Use Lovable**
+**Luxora AI** is an elegant AI-powered travel and lifestyle assistant designed to help users find **luxury hotels, fine dining, and relaxing spots** with ease and warmth.
+It blends **AI intelligence** with **human-like charm**, speaking both **English** and **Swahili**, making it accessible and lovable for users across East Africa and beyond.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/30862376-190e-4faf-814b-9ddde012ce83) and start prompting.
+Luxora AI can:
 
-Changes made via Lovable will be committed automatically to this repo.
+* 💬 Chat naturally in English or Swahili
+* 🏨 Recommend top hotels, resorts, and restaurants
+* 🌐 Switch languages instantly
+* 💚 Connect directly via **WhatsApp**
+* 📱 Prepare for future **mobile app** integration
 
-**Use your preferred IDE**
+> “I’m Luxora AI — your smart luxury companion, here to make your travel and lifestyle experiences easier and more delightful.”
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Key Features
 
-Follow these steps:
+| Feature                       | Description                                                             |
+| ----------------------------- | ----------------------------------------------------------------------- |
+| 🌍 **Bilingual Support**      | Full support with instant language switching          |
+| 💬 **AI Chat Interface**      | Elegant web-based chat with dynamic responses                           |
+| 🤖 **Smart Replies**          | Context-aware answers focused on travel, luxury, and hospitality        |
+| 💚 **WhatsApp Integration**   | Connect instantly through your WhatsApp at `https://wa.me/255693142943` |
+| 📱 **Mobile Ready Design**    | Fully responsive, built for future app deployment                       |
+| 💎 **Personalized Greetings** | Friendly intros and consistent emotional tone                           |
+| 🔄 **AI Typing Indicator**    | Shows when Luxora AI is “thinking” to enhance realism                   |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🌐 WhatsApp Integration
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+To chat with **Luxora AI** via WhatsApp:
+Click here 👉 [Chat on WhatsApp](https://wa.me/255693142943)
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🗣️ Language Examples
 
-**Edit a file directly in GitHub**
+**English Example:**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+> **User:** “Can you suggest five good hotels in Dar es Salaam?”
+> **Luxora AI:**
+>
+> 1. Hyatt Regency Dar es Salaam, The Kilimanjaro
+> 2. Serena Hotel
+> 3. Ramada Resort by Wyndham
+> 4. Slipway Hotel
+> 5. Hotel White Sands, Azura Retreat & Spa
 
-**Use GitHub Codespaces**
+**Swahili Example:**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+> **Mtumiaji:** “Natafuta hoteli nzuri jijini Mbeya.”
+> **Luxora AI:**
+>
+> 1. Mount Livingstone Hotel
+> 2. Peace Hotel Mbeya
+> 3. Hill View Hotel Mbeya
+> 4. New Forest Hotel
+> 5. Mbeya Peak Hotel
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 💖 Vision
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Luxora AI aims to redefine how travelers connect with luxury experiences in Africa — bridging **AI, culture, and hospitality** in a warm, personal way.
 
-## How can I deploy this project?
+> “Technology meets elegance — Luxora AI is not just smart, it’s soulful.”
 
-Simply open [Lovable](https://lovable.dev/projects/30862376-190e-4faf-814b-9ddde012ce83) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📲 Future Roadmap
 
-Yes, you can!
+* ✅ Web Chat App (English & Swahili)
+* ✅ WhatsApp Integration
+* 🔄 AI Personalization (user memory)
+* 📱 Native Mobile App (Android & iOS)
+* 🌍 Geo-based hotel recommendations
+* 💬 Voice Chat (Multilingual)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 👨‍💻 Developer
+
+**Created by:** [Fede de Fe (Maxmus Fedelika)](https://github.com/yourusername)
+**Country:** 🇹🇿 Tanzania
+**Email:** [maxmusfedelika@gmail.com](mailto:maxmusfedelika@gmail.com)
+**AI Assistant Name:** *Luxora AI*
+**WhatsApp:** [+255 693 142 943](https://wa.me/255693142943)
+
+---
+
+## 🧠 Inspiration
+
+Luxora AI was inspired by the growing need for **smart, culturally aware assistants** that understand both **language and lifestyle**, built with love for travelers, dreamers, and explorers.
+
+> “Luxury isn’t just where you stay — it’s how you’re guided there.”
+
+---
+
