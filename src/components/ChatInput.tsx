@@ -7,9 +7,19 @@ interface ChatInputProps {
   onSend: (message: string) => void;
   onRefresh: () => void;
   disabled?: boolean;
+  placeholder?: string;
+  sendLabel?: string;
+  refreshLabel?: string;
 }
 
-export const ChatInput = ({ onSend, onRefresh, disabled }: ChatInputProps) => {
+export const ChatInput = ({ 
+  onSend, 
+  onRefresh, 
+  disabled, 
+  placeholder = "Ask about luxury hotels, restaurants, or destinations...",
+  sendLabel = "Send",
+  refreshLabel = "New Chat"
+}: ChatInputProps) => {
   const [input, setInput] = useState("");
 
   const handleSend = () => {
@@ -33,7 +43,7 @@ export const ChatInput = ({ onSend, onRefresh, disabled }: ChatInputProps) => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder="Ask about luxury hotels, restaurants, or destinations..."
+          placeholder={placeholder}
           disabled={disabled}
           className="flex-1 min-h-[60px] max-h-[120px] resize-none bg-background/50 border-border/50 focus:border-secondary transition-colors font-sans"
         />
@@ -43,6 +53,7 @@ export const ChatInput = ({ onSend, onRefresh, disabled }: ChatInputProps) => {
             disabled={!input.trim() || disabled}
             size="icon"
             className="bg-gradient-gold hover:shadow-glow transition-all duration-300 hover:scale-105"
+            title={sendLabel}
           >
             <Send className="w-4 h-4 text-primary" />
           </Button>
@@ -52,6 +63,7 @@ export const ChatInput = ({ onSend, onRefresh, disabled }: ChatInputProps) => {
             size="icon"
             variant="outline"
             className="border-border/50 hover:border-secondary hover:bg-secondary/10 transition-all duration-300"
+            title={refreshLabel}
           >
             <RotateCcw className="w-4 h-4 text-secondary" />
           </Button>
